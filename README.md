@@ -1,4 +1,4 @@
-# AliXd Project Setup and Usage Guide
+# SoccerNet Project Setup and Usage Guide
 
 This repository contains our COSC 419 project code for jersey number recognition using PARSeq, plus scripts for legibility filtering, training, and validation.
 
