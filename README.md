@@ -72,6 +72,7 @@ root/
 		└── ... one folder per tracklet ...
 ```
 
+![alt text](image.png)
 ## What The Main Files Are For
 
 ### Root scripts
