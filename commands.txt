@@ -1,0 +1,10 @@
+python main.py --legibility-precomputed "C:\Users\toby0\Documents\UBC\COSC-419\Project\AliXd\outputs\parseq_train\legibility_kept_samples_legible.txt" --epochs 20 --pretrained-model "outputs\parseq_e20_v2\train_run\checkpoints\epoch=18-step=380-val_accuracy=94.6860-val_NED=95.9742.ckpt" --output-dir "outputs\parseq_e20_v2" --max-label-length 2
+validation:
+python validation.py --checkpoint "outputs\parseq_e20_v2\train_run\checkpoints\epoch=19-step=400-val_accuracy=95.6522-val_NED=96.3768.ckpt" --num-samples 500
+
+.\.venv\Scripts\Activate.ps1
+
+
+python.exe validate_tracklets.py --checkpoint outputs\parseq_e20_v2\train_run\checkpoints\epoch=19-step=400-val_accuracy=95.6522-val_NED=96.3768.ckpt --gt-path train/train_gt.json --image-dir train\image --kept-samples legibility_kept_samples_legible.txt --num-samples 1000 --vote-mode weighted
+
+python.exe validate_tracklets.py --checkpoint outputs\parseq_tracklet_split_ft\train_run\checkpoints\epoch=4-step=1750-val_accuracy=77.5632-val_NED=81.9084.ckpt --gt-path train/train_gt.json --image-dir train\image --kept-samples legibility_kept_samples_legible.txt --num-samples 5000 --vote-mode weighted

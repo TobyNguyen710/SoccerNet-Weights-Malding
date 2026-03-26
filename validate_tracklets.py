@@ -198,6 +198,7 @@ def tracklet_vote(results: list, vote_mode: str = 'weighted') -> dict:
         if not candidates:
             winner = ''
             winner_score = 0.0
+            total_score = 0.0
         else:
             # Tie-break by vote count then lexicographical label for deterministic output.
             winner = max(
@@ -205,6 +206,9 @@ def tracklet_vote(results: list, vote_mode: str = 'weighted') -> dict:
                 key=lambda p: (candidates[p], vote_counts[tkl][p], p)
             )
             winner_score = float(candidates[winner])
+            total_score = float(sum(candidates.values()))
+
+        vote_confidence = (winner_score / total_score) if total_score > 0 else 0.0
 
         gt = tracklet_gt[tkl]
         out[tkl] = {
@@ -212,6 +216,7 @@ def tracklet_vote(results: list, vote_mode: str = 'weighted') -> dict:
             'pred': winner,
             'correct': winner.upper() == gt.upper(),
             'vote_score': winner_score,
+            'vote_confidence': vote_confidence,
             'vote_mode': vote_mode,
         }
     return out
@@ -345,17 +350,27 @@ def validate(
     logger.info("=" * 80)
     
     # Show sample results
-    logger.info(f"\n[Sample Predictions (first 10)]:")
-    logger.info(f"  {'Status':8} {'Image':45} {'GT':15} {'Pred':15}")
-    logger.info(f"  {'-'*8} {'-'*45} {'-'*15} {'-'*15}")
-    for i, res in enumerate(results[:10]):
+    logger.info(f"\n[Sample Predictions (first 25)]:")
+    logger.info(f"  {'Status':8} {'Image':45} {'GT':15} {'Pred':15} {'Conf':8}")
+    logger.info(f"  {'-'*8} {'-'*45} {'-'*15} {'-'*15} {'-'*8}")
+    for i, res in enumerate(results[:25]):
         status = "✓ PASS" if res['correct'] else "✗ FAIL"
         img_name = Path(res['image']).name
-        logger.info(f"  {status:8} {img_name:45} {res['gt']:15} {res['pred']:15}")
+        logger.info(f"  {status:8} {img_name:45} {res['gt']:15} {res['pred']:15} {res['confidence']:.4f}")
+
+    # Show sample tracklet vote results with normalized vote confidence.
+    vote_list = [{'tracklet': tkl, **v} for tkl, v in vote_results.items()]
+    logger.info(f"\n[Sample Tracklet Votes (first 25)]:")
+    logger.info(f"  {'Status':8} {'Tracklet':10} {'GT':15} {'Vote':15} {'VoteConf':8} {'Mode':10}")
+    logger.info(f"  {'-'*8} {'-'*10} {'-'*15} {'-'*15} {'-'*8} {'-'*10}")
+    for row in vote_list[:25]:
+        status = "✓ PASS" if row['correct'] else "✗ FAIL"
+        logger.info(
+            f"  {status:8} {str(row['tracklet']):10} {row['gt']:15} {row['pred']:15} {row['vote_confidence']:.4f} {row['vote_mode']:10}"
+        )
     
     # Save detailed results
     output_path = Path("validation_results.json")
-    vote_list = [{'tracklet': tkl, **v} for tkl, v in vote_results.items()]
     with open(output_path, 'w') as f:
         json.dump({
             'checkpoint': str(checkpoint_path),
