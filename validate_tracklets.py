@@ -167,7 +167,13 @@ def normalized_edit_distance(pred: str, gt: str) -> float:
     return dp[m][n] / max(m, n)
 
 
-def tracklet_vote(results: list, vote_mode: str = 'weighted') -> dict:
+def tracklet_vote(
+    results: list,
+    vote_mode: str = 'weighted',
+    min_frame_confidence: float = 0.0,
+    two_digit_bonus: float = 0.0,
+    class_bias: Optional[dict] = None,
+) -> tuple[dict, dict]:
     """
     Aggregate per-frame predictions into per-tracklet predictions.
     Tracklet ID is the parent directory name of each image path.
@@ -178,6 +184,10 @@ def tracklet_vote(results: list, vote_mode: str = 'weighted') -> dict:
     tracklet_gt = {}
     vote_scores = defaultdict(lambda: defaultdict(float))
     vote_counts = defaultdict(Counter)
+    best_frame = {}
+    rejected_empty = 0
+    rejected_low_conf = 0
+    kept_frames = 0
 
     for r in results:
         tkl = Path(r['image']).parent.name
@@ -186,19 +196,39 @@ def tracklet_vote(results: list, vote_mode: str = 'weighted') -> dict:
         tracklet_gt[tkl] = r['gt']
 
         if not pred:
+            rejected_empty += 1
+            continue
+
+        prev_best = best_frame.get(tkl)
+        if prev_best is None or conf > prev_best[1]:
+            best_frame[tkl] = (pred, conf)
+
+        if conf < min_frame_confidence:
+            rejected_low_conf += 1
             continue
 
         weight = conf if vote_mode == 'weighted' else 1.0
+        if two_digit_bonus > 0 and len(pred) == 2:
+            weight *= (1.0 + two_digit_bonus)
+        if class_bias is not None:
+            weight *= float(class_bias.get(pred, 1.0))
         vote_scores[tkl][pred] += weight
         vote_counts[tkl][pred] += 1
+        kept_frames += 1
 
     out = {}
     for tkl, gt in tracklet_gt.items():
         candidates = vote_scores[tkl]
         if not candidates:
-            winner = ''
-            winner_score = 0.0
-            total_score = 0.0
+            if tkl in best_frame:
+                winner, winner_score = best_frame[tkl]
+                total_score = winner_score
+                used_fallback = True
+            else:
+                winner = ''
+                winner_score = 0.0
+                total_score = 0.0
+                used_fallback = False
         else:
             # Tie-break by vote count then lexicographical label for deterministic output.
             winner = max(
@@ -207,6 +237,7 @@ def tracklet_vote(results: list, vote_mode: str = 'weighted') -> dict:
             )
             winner_score = float(candidates[winner])
             total_score = float(sum(candidates.values()))
+            used_fallback = False
 
         vote_confidence = (winner_score / total_score) if total_score > 0 else 0.0
 
@@ -218,8 +249,18 @@ def tracklet_vote(results: list, vote_mode: str = 'weighted') -> dict:
             'vote_score': winner_score,
             'vote_confidence': vote_confidence,
             'vote_mode': vote_mode,
+            'used_fallback': used_fallback,
         }
-    return out
+    stats = {
+        'frames_total': len(results),
+        'frames_kept': kept_frames,
+        'frames_rejected_empty': rejected_empty,
+        'frames_rejected_low_conf': rejected_low_conf,
+        'min_frame_confidence': min_frame_confidence,
+        'two_digit_bonus': two_digit_bonus,
+        'class_bias_enabled': class_bias is not None,
+    }
+    return out, stats
 
 
 def validate(
@@ -233,6 +274,9 @@ def validate(
     include_unknown: bool = False,
     tracklet_vote_enabled: bool = False,
     vote_mode: str = 'weighted',
+    min_frame_confidence: float = 0.0,
+    two_digit_bonus: float = 0.0,
+    class_bias_json: Optional[Path] = None,
 ):
     """
     Validate model on images NOT in the legible training set.
@@ -338,12 +382,38 @@ def validate(
     logger.info(f"  Avg Character Error Rate (CER): {avg_cer:.4f}")
     logger.info(f"  Avg Normalized Edit Distance (NED): {avg_ned:.4f}")
 
+    class_bias = None
+    if class_bias_json is not None:
+        class_bias_path = Path(class_bias_json)
+        if class_bias_path.exists():
+            with open(class_bias_path, 'r', encoding='utf-8') as f:
+                loaded = json.load(f)
+            class_bias = {str(k): float(v) for k, v in loaded.items()}
+        else:
+            logger.warning("Class-bias file not found: %s (continuing without bias)", class_bias_path)
+
     # Tracklet-level voting
-    vote_results = tracklet_vote(results, vote_mode=vote_mode)
+    vote_results, vote_stats = tracklet_vote(
+        results,
+        vote_mode=vote_mode,
+        min_frame_confidence=min_frame_confidence,
+        two_digit_bonus=two_digit_bonus,
+        class_bias=class_bias,
+    )
     tkl_correct = sum(1 for v in vote_results.values() if v['correct'])
     tkl_total = len(vote_results)
     tkl_acc = 100.0 * tkl_correct / tkl_total if tkl_total else 0.0
     logger.info(f"  Tracklet vote mode: {vote_mode}")
+    logger.info(f"  Frame rejection threshold: {min_frame_confidence:.3f}")
+    logger.info(f"  Two-digit vote bonus: {two_digit_bonus:.3f}")
+    logger.info(f"  Class-bias weighting: {'on' if class_bias is not None else 'off'}")
+    logger.info(
+        "  Voting frame stats: kept=%d rejected_empty=%d rejected_low_conf=%d total=%d",
+        vote_stats['frames_kept'],
+        vote_stats['frames_rejected_empty'],
+        vote_stats['frames_rejected_low_conf'],
+        vote_stats['frames_total'],
+    )
     logger.info(f"  Tracklets evaluated: {tkl_total}")
     logger.info(f"  Correct tracklets (vote): {tkl_correct}/{tkl_total}")
     logger.info(f"  Accuracy (tracklet-level): {tkl_acc:.2f}%")
@@ -379,6 +449,7 @@ def validate(
             'accuracy_tracklet_pct': tkl_acc,
             'avg_cer': avg_cer,
             'avg_ned': avg_ned,
+            'vote_stats': vote_stats,
             'results': results,
             'tracklet_results': vote_list,
         }, f, indent=2)
@@ -409,6 +480,12 @@ if __name__ == "__main__":
                        help="Report tracklet-level majority-vote accuracy in addition to frame-level")
     parser.add_argument("--vote-mode", choices=["weighted", "majority"], default="weighted",
                        help="Tracklet voting mode: confidence-weighted or plain majority")
+    parser.add_argument("--min-frame-confidence", type=float, default=0.0,
+                       help="Reject frame predictions below this confidence before voting")
+    parser.add_argument("--two-digit-bonus", type=float, default=0.0,
+                       help="Extra vote weight for 2-digit predictions, e.g., 0.1 adds +10%")
+    parser.add_argument("--class-bias-json", type=Path, default=None,
+                       help="Optional JSON mapping predicted label -> vote multiplier")
     
     args = parser.parse_args()
     
@@ -423,4 +500,7 @@ if __name__ == "__main__":
         include_unknown=args.include_unknown,
         tracklet_vote_enabled=args.tracklet_vote,
         vote_mode=args.vote_mode,
+        min_frame_confidence=args.min_frame_confidence,
+        two_digit_bonus=args.two_digit_bonus,
+        class_bias_json=args.class_bias_json,
     )

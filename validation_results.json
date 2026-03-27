@@ -1,16 +1,25 @@
 {
-  "checkpoint": "outputs\\parseq_tracklet_split_ft\\train_run\\checkpoints\\epoch=6-step=2450-val_accuracy=78.5551-val_NED=82.8213.ckpt",
+  "checkpoint": "outputs\\parseq_e20_v3_balanced\\train_run\\checkpoints\\epoch=7-step=392-val_accuracy=93.8704-val_NED=94.9212.ckpt",
   "num_samples": 335,
-  "accuracy_frame_pct": 29.253731343283583,
-  "accuracy_tracklet_pct": 28.571428571428573,
-  "avg_cer": 0.6144278606965174,
-  "avg_ned": 0.6373134328358209,
+  "accuracy_frame_pct": 29.850746268656717,
+  "accuracy_tracklet_pct": 32.6530612244898,
+  "avg_cer": 0.6124378109452737,
+  "avg_ned": 0.6268656716417911,
+  "vote_stats": {
+    "frames_total": 335,
+    "frames_kept": 332,
+    "frames_rejected_empty": 0,
+    "frames_rejected_low_conf": 3,
+    "min_frame_confidence": 0.45,
+    "two_digit_bonus": 0.1,
+    "class_bias_enabled": false
+  },
   "results": [
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\0\\0_18_final_torso_crop.png",
       "gt": "4",
       "pred": "6",
-      "confidence": 0.7190535068511963,
+      "confidence": 0.9555661678314209,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -18,17 +27,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\0\\0_19_final_torso_crop.png",
       "gt": "4",
-      "pred": "4",
-      "confidence": 0.7871806025505066,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "6",
+      "confidence": 0.9763405323028564,
+      "correct": false,
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\0\\0_20_final_torso_crop.png",
       "gt": "4",
       "pred": "6",
-      "confidence": 0.8086203336715698,
+      "confidence": 0.987764835357666,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -36,17 +45,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\0\\0_21_final_torso_crop.png",
       "gt": "4",
-      "pred": "4",
-      "confidence": 0.7925224900245667,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "6",
+      "confidence": 0.9735761880874634,
+      "correct": false,
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\0\\0_22_final_torso_crop.png",
       "gt": "4",
       "pred": "6",
-      "confidence": 0.7290135622024536,
+      "confidence": 0.9918047189712524,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -55,7 +64,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\0\\0_23_final_torso_crop.png",
       "gt": "4",
       "pred": "6",
-      "confidence": 0.8479553461074829,
+      "confidence": 0.9643419981002808,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -63,35 +72,35 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\1\\1_718_final_torso_crop.png",
       "gt": "93",
-      "pred": "3",
-      "confidence": 0.5118594169616699,
+      "pred": "30",
+      "confidence": 0.636309027671814,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 0.5,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\1\\1_719_final_torso_crop.png",
       "gt": "93",
-      "pred": "3",
-      "confidence": 0.7118123769760132,
+      "pred": "30",
+      "confidence": 0.8934322595596313,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 0.5,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\1\\1_720_final_torso_crop.png",
       "gt": "93",
-      "pred": "3",
-      "confidence": 0.533778727054596,
+      "pred": "29",
+      "confidence": 0.8172280192375183,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 0.5,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\1\\1_721_final_torso_crop.png",
       "gt": "93",
-      "pred": "3",
-      "confidence": 0.6827614307403564,
+      "pred": "9",
+      "confidence": 0.6869550943374634,
       "correct": false,
       "cer": 0.33333333333333337,
       "ned": 0.5
@@ -99,17 +108,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\1\\1_722_final_torso_crop.png",
       "gt": "93",
-      "pred": "6",
-      "confidence": 0.6435151100158691,
+      "pred": "9",
+      "confidence": 0.6729108095169067,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.33333333333333337,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\1\\1_723_final_torso_crop.png",
       "gt": "93",
-      "pred": "6",
-      "confidence": 0.6865646243095398,
+      "pred": "11",
+      "confidence": 0.8637299537658691,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -117,26 +126,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\2\\2_23_final_torso_crop.png",
       "gt": "25",
-      "pred": "20",
-      "confidence": 0.940290629863739,
+      "pred": "5",
+      "confidence": 0.7420673966407776,
       "correct": false,
-      "cer": 0.5,
+      "cer": 0.33333333333333337,
       "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\2\\2_24_final_torso_crop.png",
       "gt": "25",
-      "pred": "20",
-      "confidence": 0.8875052332878113,
+      "pred": "36",
+      "confidence": 0.932564914226532,
       "correct": false,
-      "cer": 0.5,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\2\\2_25_final_torso_crop.png",
       "gt": "25",
-      "pred": "33",
-      "confidence": 0.8318609595298767,
+      "pred": "10",
+      "confidence": 0.8482249975204468,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -144,17 +153,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\2\\2_26_final_torso_crop.png",
       "gt": "25",
-      "pred": "20",
-      "confidence": 0.992827832698822,
+      "pred": "34",
+      "confidence": 0.9668763875961304,
       "correct": false,
-      "cer": 0.5,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\2\\2_27_final_torso_crop.png",
       "gt": "25",
       "pred": "36",
-      "confidence": 0.8622300028800964,
+      "confidence": 0.8259005546569824,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -162,17 +171,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\2\\2_28_final_torso_crop.png",
       "gt": "25",
-      "pred": "36",
-      "confidence": 0.9053440093994141,
+      "pred": "55",
+      "confidence": 0.8522927761077881,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\5\\5_467_final_torso_crop.png",
       "gt": "11",
-      "pred": "3",
-      "confidence": 0.600151777267456,
+      "pred": "8",
+      "confidence": 0.7137705087661743,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -180,8 +189,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\5\\5_468_final_torso_crop.png",
       "gt": "11",
-      "pred": "27",
-      "confidence": 0.7416800260543823,
+      "pred": "8",
+      "confidence": 0.6218057870864868,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -189,8 +198,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\5\\5_469_final_torso_crop.png",
       "gt": "11",
-      "pred": "3",
-      "confidence": 0.4590829908847809,
+      "pred": "6",
+      "confidence": 0.7494232654571533,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -199,7 +208,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\5\\5_470_final_torso_crop.png",
       "gt": "11",
       "pred": "6",
-      "confidence": 0.6312564611434937,
+      "confidence": 0.9880582094192505,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -208,7 +217,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\5\\5_471_final_torso_crop.png",
       "gt": "11",
       "pred": "6",
-      "confidence": 0.6693403720855713,
+      "confidence": 0.9888583421707153,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -217,7 +226,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\5\\5_472_final_torso_crop.png",
       "gt": "11",
       "pred": "6",
-      "confidence": 0.6758960485458374,
+      "confidence": 0.8020666241645813,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -226,7 +235,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\6\\6_44_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.8981713056564331,
+      "confidence": 0.9804601669311523,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -235,7 +244,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\6\\6_45_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.9939106702804565,
+      "confidence": 0.9993001818656921,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -243,17 +252,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\6\\6_46_final_torso_crop.png",
       "gt": "34",
-      "pred": "34",
-      "confidence": 0.8444160223007202,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "14",
+      "confidence": 0.9994524717330933,
+      "correct": false,
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\6\\6_47_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.9798835515975952,
+      "confidence": 0.9993461966514587,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -261,17 +270,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\6\\6_48_final_torso_crop.png",
       "gt": "34",
-      "pred": "24",
-      "confidence": 0.7640604972839355,
-      "correct": false,
-      "cer": 0.5,
-      "ned": 0.5
+      "pred": "34",
+      "confidence": 0.9850975275039673,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\6\\6_49_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.977946400642395,
+      "confidence": 0.9944349527359009,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -279,26 +288,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\7\\7_31_final_torso_crop.png",
       "gt": "44",
-      "pred": "29",
-      "confidence": 0.8016349673271179,
+      "pred": "40",
+      "confidence": 0.998249888420105,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\7\\7_32_final_torso_crop.png",
       "gt": "44",
-      "pred": "29",
-      "confidence": 0.7464925050735474,
+      "pred": "40",
+      "confidence": 0.9914665222167969,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\7\\7_33_final_torso_crop.png",
       "gt": "44",
-      "pred": "8",
-      "confidence": 0.6820977926254272,
+      "pred": "29",
+      "confidence": 0.9018087387084961,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -306,8 +315,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\7\\7_34_final_torso_crop.png",
       "gt": "44",
-      "pred": "6",
-      "confidence": 0.7878793478012085,
+      "pred": "9",
+      "confidence": 0.7993768453598022,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -316,7 +325,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\7\\7_35_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.733694314956665,
+      "confidence": 0.7577451467514038,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -324,8 +333,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\7\\7_39_final_torso_crop.png",
       "gt": "44",
-      "pred": "25",
-      "confidence": 0.8993119597434998,
+      "pred": "6",
+      "confidence": 0.7675687074661255,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -334,7 +343,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\7\\7_40_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.8367766737937927,
+      "confidence": 0.7468863725662231,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -342,8 +351,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\7\\7_41_final_torso_crop.png",
       "gt": "44",
-      "pred": "6",
-      "confidence": 0.6851080656051636,
+      "pred": "9",
+      "confidence": 0.6974257230758667,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -351,8 +360,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\7\\7_42_final_torso_crop.png",
       "gt": "44",
-      "pred": "25",
-      "confidence": 0.8728175163269043,
+      "pred": "8",
+      "confidence": 0.6906346678733826,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -360,8 +369,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\7\\7_43_final_torso_crop.png",
       "gt": "44",
-      "pred": "25",
-      "confidence": 0.9160995483398438,
+      "pred": "29",
+      "confidence": 0.8434380888938904,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -370,7 +379,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\8\\8_10_final_torso_crop.png",
       "gt": "33",
       "pred": "33",
-      "confidence": 0.9875140190124512,
+      "confidence": 0.859761118888855,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -378,26 +387,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\8\\8_11_final_torso_crop.png",
       "gt": "33",
-      "pred": "20",
-      "confidence": 0.9989542961120605,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
-    },
-    {
-      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\8\\8_12_final_torso_crop.png",
-      "gt": "33",
       "pred": "33",
-      "confidence": 0.980134904384613,
+      "confidence": 0.9928818941116333,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
     },
     {
+      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\8\\8_12_final_torso_crop.png",
+      "gt": "33",
+      "pred": "31",
+      "confidence": 0.8984129428863525,
+      "correct": false,
+      "cer": 0.5,
+      "ned": 0.5
+    },
+    {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\8\\8_7_final_torso_crop.png",
       "gt": "33",
       "pred": "33",
-      "confidence": 0.9992581605911255,
+      "confidence": 0.9981307983398438,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -406,7 +415,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\8\\8_8_final_torso_crop.png",
       "gt": "33",
       "pred": "33",
-      "confidence": 0.9932142496109009,
+      "confidence": 0.8712841868400574,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -415,7 +424,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\8\\8_9_final_torso_crop.png",
       "gt": "33",
       "pred": "33",
-      "confidence": 0.9953607320785522,
+      "confidence": 0.9977133274078369,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -424,7 +433,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\9\\9_199_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9949443340301514,
+      "confidence": 0.9713422656059265,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -433,7 +442,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\9\\9_200_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9988864660263062,
+      "confidence": 0.9968780279159546,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -442,7 +451,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\9\\9_201_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9985097646713257,
+      "confidence": 0.9965894222259521,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -451,7 +460,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\9\\9_202_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.999330997467041,
+      "confidence": 0.9996343851089478,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -460,7 +469,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\9\\9_203_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9938814043998718,
+      "confidence": 0.9174751043319702,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -469,7 +478,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\9\\9_223_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9996780157089233,
+      "confidence": 0.9991786479949951,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -478,7 +487,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\9\\9_224_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9996325373649597,
+      "confidence": 0.9995311498641968,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -487,7 +496,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\9\\9_225_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9997248649597168,
+      "confidence": 0.9996659755706787,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -496,7 +505,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\9\\9_226_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9995071887969971,
+      "confidence": 0.9993025660514832,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -505,7 +514,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\9\\9_227_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9994141459465027,
+      "confidence": 0.9996806979179382,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -514,7 +523,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\10\\10_707_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.9989333152770996,
+      "confidence": 0.9985083937644958,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -523,7 +532,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\10\\10_708_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.9994146227836609,
+      "confidence": 0.9887841939926147,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -532,7 +541,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\10\\10_709_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.9995989799499512,
+      "confidence": 0.9809602499008179,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -541,7 +550,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\10\\10_710_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.9996384978294373,
+      "confidence": 0.9988183379173279,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -550,7 +559,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\10\\10_711_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.9995676875114441,
+      "confidence": 0.9995940923690796,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -559,7 +568,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\10\\10_712_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.9996919631958008,
+      "confidence": 0.9996190071105957,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -567,8 +576,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\11\\11_73_final_torso_crop.png",
       "gt": "31",
-      "pred": "28",
-      "confidence": 0.8072518706321716,
+      "pred": "29",
+      "confidence": 0.9175610542297363,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -576,8 +585,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\11\\11_75_final_torso_crop.png",
       "gt": "31",
-      "pred": "28",
-      "confidence": 0.8160762190818787,
+      "pred": "29",
+      "confidence": 0.9652509093284607,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -585,8 +594,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\11\\11_76_final_torso_crop.png",
       "gt": "31",
-      "pred": "5",
-      "confidence": 0.46039026975631714,
+      "pred": "29",
+      "confidence": 0.8406924605369568,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -594,17 +603,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\11\\11_77_final_torso_crop.png",
       "gt": "31",
-      "pred": "3",
-      "confidence": 0.48278066515922546,
+      "pred": "10",
+      "confidence": 0.8085473775863647,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 0.5,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\11\\11_78_final_torso_crop.png",
       "gt": "31",
-      "pred": "24",
-      "confidence": 0.8595311045646667,
+      "pred": "4",
+      "confidence": 0.47499075531959534,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -613,7 +622,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\11\\11_79_final_torso_crop.png",
       "gt": "31",
       "pred": "24",
-      "confidence": 0.7085911631584167,
+      "confidence": 0.8827147483825684,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -621,26 +630,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\12\\12_1_final_torso_crop.png",
       "gt": "14",
-      "pred": "3",
-      "confidence": 0.6143433451652527,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
-    },
-    {
-      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\12\\12_2_final_torso_crop.png",
-      "gt": "14",
       "pred": "14",
-      "confidence": 0.6289823055267334,
+      "confidence": 0.6856857538223267,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
     },
     {
+      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\12\\12_2_final_torso_crop.png",
+      "gt": "14",
+      "pred": "29",
+      "confidence": 0.7607548236846924,
+      "correct": false,
+      "cer": 1.0,
+      "ned": 1.0
+    },
+    {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\12\\12_3_final_torso_crop.png",
       "gt": "14",
       "pred": "33",
-      "confidence": 0.8498226404190063,
+      "confidence": 0.8402184247970581,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -648,8 +657,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\12\\12_4_final_torso_crop.png",
       "gt": "14",
-      "pred": "3",
-      "confidence": 0.6352509260177612,
+      "pred": "22",
+      "confidence": 0.8243111371994019,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -658,7 +667,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\12\\12_5_final_torso_crop.png",
       "gt": "14",
       "pred": "33",
-      "confidence": 0.9614684581756592,
+      "confidence": 0.938493013381958,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -667,7 +676,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\12\\12_6_final_torso_crop.png",
       "gt": "14",
       "pred": "33",
-      "confidence": 0.9796810150146484,
+      "confidence": 0.9875301718711853,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -675,8 +684,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\13\\13_103_final_torso_crop.png",
       "gt": "33",
-      "pred": "20",
-      "confidence": 0.6607477068901062,
+      "pred": "10",
+      "confidence": 0.7936651706695557,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -685,7 +694,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\13\\13_104_final_torso_crop.png",
       "gt": "33",
       "pred": "29",
-      "confidence": 0.7824572920799255,
+      "confidence": 0.9816433191299438,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -694,7 +703,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\13\\13_105_final_torso_crop.png",
       "gt": "33",
       "pred": "34",
-      "confidence": 0.8624483346939087,
+      "confidence": 0.9869564771652222,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -703,7 +712,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\13\\13_106_final_torso_crop.png",
       "gt": "33",
       "pred": "34",
-      "confidence": 0.9853196144104004,
+      "confidence": 0.9983792304992676,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -712,7 +721,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\13\\13_107_final_torso_crop.png",
       "gt": "33",
       "pred": "34",
-      "confidence": 0.9964807033538818,
+      "confidence": 0.9995313882827759,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -720,8 +729,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\13\\13_79_final_torso_crop.png",
       "gt": "33",
-      "pred": "25",
-      "confidence": 0.7776197791099548,
+      "pred": "29",
+      "confidence": 0.8931821584701538,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -729,8 +738,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\13\\13_80_final_torso_crop.png",
       "gt": "33",
-      "pred": "24",
-      "confidence": 0.6786479949951172,
+      "pred": "29",
+      "confidence": 0.9039208889007568,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -739,7 +748,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\13\\13_81_final_torso_crop.png",
       "gt": "33",
       "pred": "29",
-      "confidence": 0.7773914337158203,
+      "confidence": 0.8450831174850464,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -747,17 +756,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\13\\13_82_final_torso_crop.png",
       "gt": "33",
-      "pred": "3",
-      "confidence": 0.34841829538345337,
+      "pred": "29",
+      "confidence": 0.8084825277328491,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\13\\13_83_final_torso_crop.png",
       "gt": "33",
-      "pred": "9",
-      "confidence": 0.8457735180854797,
+      "pred": "29",
+      "confidence": 0.9048539996147156,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -765,26 +774,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\14\\14_701_final_torso_crop.png",
       "gt": "8",
-      "pred": "3",
-      "confidence": 0.783960223197937,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
-    },
-    {
-      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\14\\14_702_final_torso_crop.png",
-      "gt": "8",
       "pred": "8",
-      "confidence": 0.7789225578308105,
+      "confidence": 0.7901408672332764,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
     },
     {
+      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\14\\14_702_final_torso_crop.png",
+      "gt": "8",
+      "pred": "6",
+      "confidence": 0.7896972894668579,
+      "correct": false,
+      "cer": 1.0,
+      "ned": 1.0
+    },
+    {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\14\\14_703_final_torso_crop.png",
       "gt": "8",
-      "pred": "3",
-      "confidence": 0.8169773817062378,
+      "pred": "6",
+      "confidence": 0.7956923246383667,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -793,7 +802,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\14\\14_704_final_torso_crop.png",
       "gt": "8",
       "pred": "6",
-      "confidence": 0.6763910055160522,
+      "confidence": 0.7758548259735107,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -801,8 +810,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\14\\14_705_final_torso_crop.png",
       "gt": "8",
-      "pred": "6",
-      "confidence": 0.842098593711853,
+      "pred": "9",
+      "confidence": 0.6369940638542175,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -810,17 +819,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\14\\14_706_final_torso_crop.png",
       "gt": "8",
-      "pred": "8",
-      "confidence": 0.7941815853118896,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "3",
+      "confidence": 0.758632242679596,
+      "correct": false,
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\15\\15_690_final_torso_crop.png",
       "gt": "36",
       "pred": "34",
-      "confidence": 0.8805873394012451,
+      "confidence": 0.9994586706161499,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -828,26 +837,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\15\\15_691_final_torso_crop.png",
       "gt": "36",
-      "pred": "33",
-      "confidence": 0.9970954656600952,
-      "correct": false,
-      "cer": 0.5,
-      "ned": 0.5
-    },
-    {
-      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\15\\15_692_final_torso_crop.png",
-      "gt": "36",
       "pred": "36",
-      "confidence": 0.8064031600952148,
+      "confidence": 0.9327503442764282,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
     },
     {
+      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\15\\15_692_final_torso_crop.png",
+      "gt": "36",
+      "pred": "34",
+      "confidence": 0.9383596181869507,
+      "correct": false,
+      "cer": 0.5,
+      "ned": 0.5
+    },
+    {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\15\\15_693_final_torso_crop.png",
       "gt": "36",
       "pred": "34",
-      "confidence": 0.9693180918693542,
+      "confidence": 0.9926936030387878,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -855,17 +864,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\15\\15_694_final_torso_crop.png",
       "gt": "36",
-      "pred": "20",
-      "confidence": 0.998818576335907,
+      "pred": "31",
+      "confidence": 0.8419710993766785,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\15\\15_695_final_torso_crop.png",
       "gt": "36",
       "pred": "20",
-      "confidence": 0.9935395121574402,
+      "confidence": 0.998343825340271,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -873,17 +882,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\16\\16_197_final_torso_crop.png",
       "gt": "36",
-      "pred": "6",
-      "confidence": 0.7587950229644775,
+      "pred": "29",
+      "confidence": 0.892630934715271,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\16\\16_198_final_torso_crop.png",
       "gt": "36",
-      "pred": "29",
-      "confidence": 0.9294755458831787,
+      "pred": "40",
+      "confidence": 0.99627685546875,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -892,7 +901,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\16\\16_199_final_torso_crop.png",
       "gt": "36",
       "pred": "9",
-      "confidence": 0.7064151763916016,
+      "confidence": 0.8464504480361938,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -900,17 +909,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\16\\16_200_final_torso_crop.png",
       "gt": "36",
-      "pred": "6",
-      "confidence": 0.6764626502990723,
+      "pred": "40",
+      "confidence": 0.877875030040741,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\16\\16_201_final_torso_crop.png",
       "gt": "36",
-      "pred": "10",
-      "confidence": 0.6860671043395996,
+      "pred": "40",
+      "confidence": 0.7482056021690369,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -918,8 +927,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\16\\16_202_final_torso_crop.png",
       "gt": "36",
-      "pred": "10",
-      "confidence": 0.812659740447998,
+      "pred": "40",
+      "confidence": 0.956974983215332,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -928,7 +937,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\17\\17_572_final_torso_crop.png",
       "gt": "8",
       "pred": "8",
-      "confidence": 0.7320018410682678,
+      "confidence": 0.7780134677886963,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -936,8 +945,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\17\\17_573_final_torso_crop.png",
       "gt": "8",
-      "pred": "20",
-      "confidence": 0.8984674215316772,
+      "pred": "10",
+      "confidence": 0.7695977091789246,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -945,8 +954,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\17\\17_574_final_torso_crop.png",
       "gt": "8",
-      "pred": "20",
-      "confidence": 0.9987947344779968,
+      "pred": "10",
+      "confidence": 0.9349179267883301,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -954,17 +963,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\17\\17_575_final_torso_crop.png",
       "gt": "8",
-      "pred": "20",
-      "confidence": 0.8559927344322205,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "8",
+      "confidence": 0.805866003036499,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\17\\17_576_final_torso_crop.png",
       "gt": "8",
-      "pred": "20",
-      "confidence": 0.9990725517272949,
+      "pred": "9",
+      "confidence": 0.7464037537574768,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -973,7 +982,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\17\\17_577_final_torso_crop.png",
       "gt": "8",
       "pred": "8",
-      "confidence": 0.7447313070297241,
+      "confidence": 0.7120665311813354,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -982,7 +991,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\18\\18_466_final_torso_crop.png",
       "gt": "1",
       "pred": "9",
-      "confidence": 0.7659090757369995,
+      "confidence": 0.8700978755950928,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -990,17 +999,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\18\\18_467_final_torso_crop.png",
       "gt": "1",
-      "pred": "8",
-      "confidence": 0.685592770576477,
+      "pred": "19",
+      "confidence": 0.7012922167778015,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.33333333333333337,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\18\\18_468_final_torso_crop.png",
       "gt": "1",
-      "pred": "8",
-      "confidence": 0.670411229133606,
+      "pred": "9",
+      "confidence": 0.8759430646896362,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1008,8 +1017,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\18\\18_469_final_torso_crop.png",
       "gt": "1",
-      "pred": "8",
-      "confidence": 0.7071044445037842,
+      "pred": "9",
+      "confidence": 0.775646984577179,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1017,26 +1026,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\18\\18_470_final_torso_crop.png",
       "gt": "1",
-      "pred": "8",
-      "confidence": 0.6721858382225037,
+      "pred": "10",
+      "confidence": 0.7686194777488708,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.33333333333333337,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\18\\18_471_final_torso_crop.png",
       "gt": "1",
-      "pred": "9",
-      "confidence": 0.6644175052642822,
+      "pred": "14",
+      "confidence": 0.7462754249572754,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.33333333333333337,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\26\\26_689_final_torso_crop.png",
       "gt": "9",
-      "pred": "8",
-      "confidence": 0.7196178436279297,
+      "pred": "55",
+      "confidence": 0.9561165571212769,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1045,7 +1054,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\26\\26_690_final_torso_crop.png",
       "gt": "9",
       "pred": "9",
-      "confidence": 0.6660271883010864,
+      "confidence": 0.8355793952941895,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1053,26 +1062,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\26\\26_691_final_torso_crop.png",
       "gt": "9",
-      "pred": "33",
-      "confidence": 0.836722731590271,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "9",
+      "confidence": 0.6710152626037598,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\26\\26_693_final_torso_crop.png",
       "gt": "9",
-      "pred": "6",
-      "confidence": 0.6144137978553772,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "9",
+      "confidence": 0.8986668586730957,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\26\\26_694_final_torso_crop.png",
       "gt": "9",
-      "pred": "3",
-      "confidence": 0.7674013376235962,
+      "pred": "6",
+      "confidence": 0.8517078161239624,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1081,7 +1090,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\26\\26_695_final_torso_crop.png",
       "gt": "9",
       "pred": "3",
-      "confidence": 0.5988206267356873,
+      "confidence": 0.45245957374572754,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1090,7 +1099,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\27\\27_283_final_torso_crop.png",
       "gt": "4",
       "pred": "6",
-      "confidence": 0.8994646072387695,
+      "confidence": 0.9905615448951721,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1099,7 +1108,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\27\\27_284_final_torso_crop.png",
       "gt": "4",
       "pred": "6",
-      "confidence": 0.7830923795700073,
+      "confidence": 0.9959515333175659,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1107,8 +1116,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\27\\27_286_final_torso_crop.png",
       "gt": "4",
-      "pred": "8",
-      "confidence": 0.6702715754508972,
+      "pred": "6",
+      "confidence": 0.9854809641838074,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1117,7 +1126,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\27\\27_287_final_torso_crop.png",
       "gt": "4",
       "pred": "6",
-      "confidence": 0.8410882949829102,
+      "confidence": 0.990810751914978,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1126,7 +1135,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\27\\27_288_final_torso_crop.png",
       "gt": "4",
       "pred": "6",
-      "confidence": 0.740844190120697,
+      "confidence": 0.901465892791748,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1134,8 +1143,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\27\\27_289_final_torso_crop.png",
       "gt": "4",
-      "pred": "3",
-      "confidence": 0.577750563621521,
+      "pred": "6",
+      "confidence": 0.9006226658821106,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1143,8 +1152,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\28\\28_236_final_torso_crop.png",
       "gt": "8",
-      "pred": "20",
-      "confidence": 0.9846126437187195,
+      "pred": "4",
+      "confidence": 0.5747278928756714,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1152,17 +1161,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\28\\28_237_final_torso_crop.png",
       "gt": "8",
-      "pred": "20",
-      "confidence": 0.7499575614929199,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "8",
+      "confidence": 0.6722126603126526,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\28\\28_238_final_torso_crop.png",
       "gt": "8",
-      "pred": "20",
-      "confidence": 0.9855877757072449,
+      "pred": "9",
+      "confidence": 0.7053855657577515,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1170,8 +1179,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\28\\28_239_final_torso_crop.png",
       "gt": "8",
-      "pred": "9",
-      "confidence": 0.6923991441726685,
+      "pred": "20",
+      "confidence": 0.7864079475402832,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1179,8 +1188,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\28\\28_240_final_torso_crop.png",
       "gt": "8",
-      "pred": "9",
-      "confidence": 0.7041940093040466,
+      "pred": "20",
+      "confidence": 0.8745888471603394,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1188,8 +1197,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\28\\28_242_final_torso_crop.png",
       "gt": "8",
-      "pred": "16",
-      "confidence": 0.9186564683914185,
+      "pred": "20",
+      "confidence": 0.7648439407348633,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1197,8 +1206,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\28\\28_243_final_torso_crop.png",
       "gt": "8",
-      "pred": "16",
-      "confidence": 0.9745856523513794,
+      "pred": "4",
+      "confidence": 0.4306254982948303,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1206,8 +1215,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\28\\28_244_final_torso_crop.png",
       "gt": "8",
-      "pred": "16",
-      "confidence": 0.9969948530197144,
+      "pred": "9",
+      "confidence": 0.7077831029891968,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1215,8 +1224,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\28\\28_245_final_torso_crop.png",
       "gt": "8",
-      "pred": "20",
-      "confidence": 0.9645345211029053,
+      "pred": "9",
+      "confidence": 0.8663617372512817,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1224,8 +1233,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\28\\28_246_final_torso_crop.png",
       "gt": "8",
-      "pred": "20",
-      "confidence": 0.9971909523010254,
+      "pred": "10",
+      "confidence": 0.7761787176132202,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1233,17 +1242,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\30\\30_1_final_torso_crop.png",
       "gt": "33",
-      "pred": "33",
-      "confidence": 0.9993965029716492,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "34",
+      "confidence": 0.916286826133728,
+      "correct": false,
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\30\\30_2_final_torso_crop.png",
       "gt": "33",
       "pred": "33",
-      "confidence": 0.9968603849411011,
+      "confidence": 0.9981881976127625,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1252,7 +1261,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\30\\30_3_final_torso_crop.png",
       "gt": "33",
       "pred": "33",
-      "confidence": 0.9987894892692566,
+      "confidence": 0.9734483957290649,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1261,7 +1270,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\30\\30_4_final_torso_crop.png",
       "gt": "33",
       "pred": "33",
-      "confidence": 0.9463515281677246,
+      "confidence": 0.9974038004875183,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1269,26 +1278,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\30\\30_5_final_torso_crop.png",
       "gt": "33",
-      "pred": "33",
-      "confidence": 0.9442110061645508,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "34",
+      "confidence": 0.9879938960075378,
+      "correct": false,
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\30\\30_6_final_torso_crop.png",
       "gt": "33",
-      "pred": "33",
-      "confidence": 0.9780599474906921,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "34",
+      "confidence": 0.9988734126091003,
+      "correct": false,
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\31\\31_265_final_torso_crop.png",
       "gt": "14",
       "pred": "6",
-      "confidence": 0.6391379833221436,
+      "confidence": 0.9201645255088806,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1296,17 +1305,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\31\\31_266_final_torso_crop.png",
       "gt": "14",
-      "pred": "4",
-      "confidence": 0.6976553201675415,
+      "pred": "6",
+      "confidence": 0.8128070831298828,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\31\\31_267_final_torso_crop.png",
       "gt": "14",
       "pred": "6",
-      "confidence": 0.6485207080841064,
+      "confidence": 0.9170132875442505,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1315,7 +1324,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\31\\31_268_final_torso_crop.png",
       "gt": "14",
       "pred": "6",
-      "confidence": 0.6898906230926514,
+      "confidence": 0.9695435762405396,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1324,7 +1333,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\31\\31_269_final_torso_crop.png",
       "gt": "14",
       "pred": "6",
-      "confidence": 0.7188236117362976,
+      "confidence": 0.7085828185081482,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1333,7 +1342,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\31\\31_270_final_torso_crop.png",
       "gt": "14",
       "pred": "6",
-      "confidence": 0.6776916980743408,
+      "confidence": 0.8286371827125549,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1342,7 +1351,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\32\\32_387_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.9994587898254395,
+      "confidence": 0.997333288192749,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1351,7 +1360,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\32\\32_388_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.999436616897583,
+      "confidence": 0.9983237981796265,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1360,7 +1369,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\32\\32_389_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.9995383024215698,
+      "confidence": 0.9849881529808044,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1369,7 +1378,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\32\\32_390_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.9983827471733093,
+      "confidence": 0.9919751882553101,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1378,7 +1387,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\32\\32_391_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.9992610812187195,
+      "confidence": 0.9728123545646667,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1387,7 +1396,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\32\\32_392_final_torso_crop.png",
       "gt": "10",
       "pred": "10",
-      "confidence": 0.9988017082214355,
+      "confidence": 0.9698581695556641,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1395,17 +1404,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\33\\33_625_final_torso_crop.png",
       "gt": "31",
-      "pred": "33",
-      "confidence": 0.9508097171783447,
+      "pred": "20",
+      "confidence": 0.7800042629241943,
       "correct": false,
-      "cer": 0.5,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\33\\33_626_final_torso_crop.png",
       "gt": "31",
       "pred": "33",
-      "confidence": 0.9871026873588562,
+      "confidence": 0.99654221534729,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -1414,7 +1423,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\33\\33_627_final_torso_crop.png",
       "gt": "31",
       "pred": "31",
-      "confidence": 0.9137508273124695,
+      "confidence": 0.9880342483520508,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1422,35 +1431,35 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\33\\33_628_final_torso_crop.png",
       "gt": "31",
-      "pred": "31",
-      "confidence": 0.9093317985534668,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "33",
+      "confidence": 0.9889537692070007,
+      "correct": false,
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\33\\33_629_final_torso_crop.png",
       "gt": "31",
-      "pred": "31",
-      "confidence": 0.992635190486908,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "34",
+      "confidence": 0.7374289035797119,
+      "correct": false,
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\33\\33_630_final_torso_crop.png",
       "gt": "31",
-      "pred": "24",
-      "confidence": 0.9598616361618042,
+      "pred": "34",
+      "confidence": 0.9826968908309937,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\35\\35_174_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.6751247644424438,
+      "confidence": 0.9672518372535706,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1459,7 +1468,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\35\\35_175_final_torso_crop.png",
       "gt": "44",
       "pred": "29",
-      "confidence": 0.7370176315307617,
+      "confidence": 0.9268602132797241,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1468,7 +1477,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\35\\35_176_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.684333324432373,
+      "confidence": 0.9582191705703735,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1476,8 +1485,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\35\\35_177_final_torso_crop.png",
       "gt": "44",
-      "pred": "11",
-      "confidence": 0.843377947807312,
+      "pred": "6",
+      "confidence": 0.8928226828575134,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1486,7 +1495,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\35\\35_178_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.6287504434585571,
+      "confidence": 0.7792293429374695,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1494,8 +1503,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\35\\35_179_final_torso_crop.png",
       "gt": "44",
-      "pred": "11",
-      "confidence": 0.9367145299911499,
+      "pred": "29",
+      "confidence": 0.8589563369750977,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1504,7 +1513,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\36\\36_661_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9997249841690063,
+      "confidence": 0.9996978640556335,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1513,7 +1522,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\36\\36_662_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9951947927474976,
+      "confidence": 0.9539365172386169,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1522,7 +1531,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\36\\36_663_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9996074438095093,
+      "confidence": 0.8788325190544128,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1531,7 +1540,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\36\\36_664_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9992570877075195,
+      "confidence": 0.9992332458496094,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1540,7 +1549,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\36\\36_665_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9990529417991638,
+      "confidence": 0.9965662956237793,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1549,7 +1558,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\36\\36_666_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9997026920318604,
+      "confidence": 0.9988765716552734,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1558,7 +1567,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\36\\36_667_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9993032813072205,
+      "confidence": 0.993309497833252,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1566,8 +1575,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\37\\37_669_final_torso_crop.png",
       "gt": "1",
-      "pred": "21",
-      "confidence": 0.7959367632865906,
+      "pred": "19",
+      "confidence": 0.9806545972824097,
       "correct": false,
       "cer": 0.33333333333333337,
       "ned": 0.5
@@ -1575,53 +1584,53 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\37\\37_670_final_torso_crop.png",
       "gt": "1",
-      "pred": "10",
-      "confidence": 0.6786956191062927,
+      "pred": "4",
+      "confidence": 0.597538411617279,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\37\\37_671_final_torso_crop.png",
       "gt": "1",
-      "pred": "1",
-      "confidence": 0.9011713862419128,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "40",
+      "confidence": 0.6380999088287354,
+      "correct": false,
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\37\\37_672_final_torso_crop.png",
       "gt": "1",
-      "pred": "1",
-      "confidence": 0.5825856924057007,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "40",
+      "confidence": 0.8395792841911316,
+      "correct": false,
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\37\\37_673_final_torso_crop.png",
       "gt": "1",
-      "pred": "19",
-      "confidence": 0.7525150775909424,
+      "pred": "4",
+      "confidence": 0.6772258281707764,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\37\\37_688_final_torso_crop.png",
       "gt": "1",
-      "pred": "11",
-      "confidence": 0.8044445514678955,
+      "pred": "4",
+      "confidence": 0.7674359083175659,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\37\\37_689_final_torso_crop.png",
       "gt": "1",
-      "pred": "11",
-      "confidence": 0.7370760440826416,
+      "pred": "19",
+      "confidence": 0.7554064989089966,
       "correct": false,
       "cer": 0.33333333333333337,
       "ned": 0.5
@@ -1630,7 +1639,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\37\\37_690_final_torso_crop.png",
       "gt": "1",
       "pred": "5",
-      "confidence": 0.7325266599655151,
+      "confidence": 0.43480488657951355,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1638,26 +1647,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\37\\37_691_final_torso_crop.png",
       "gt": "1",
-      "pred": "11",
-      "confidence": 0.7345664501190186,
+      "pred": "8",
+      "confidence": 0.7158586978912354,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\37\\37_692_final_torso_crop.png",
       "gt": "1",
-      "pred": "11",
-      "confidence": 0.8381710052490234,
+      "pred": "9",
+      "confidence": 0.6319828629493713,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\42\\42_674_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.9994454383850098,
+      "confidence": 0.9996554255485535,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1666,7 +1675,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\42\\42_675_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.9993919134140015,
+      "confidence": 0.9996063709259033,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1675,7 +1684,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\42\\42_676_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.999103307723999,
+      "confidence": 0.9997212290763855,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1684,7 +1693,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\42\\42_677_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.9992877840995789,
+      "confidence": 0.9996625185012817,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1693,7 +1702,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\42\\42_678_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.9988336563110352,
+      "confidence": 0.9996971487998962,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1701,17 +1710,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\42\\42_679_final_torso_crop.png",
       "gt": "34",
-      "pred": "20",
-      "confidence": 0.9971936941146851,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "34",
+      "confidence": 0.999756932258606,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\42\\42_680_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.9978907108306885,
+      "confidence": 0.9995552897453308,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1719,62 +1728,62 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\43\\43_162_final_torso_crop.png",
       "gt": "50",
-      "pred": "25",
-      "confidence": 0.9750447273254395,
+      "pred": "24",
+      "confidence": 0.822732150554657,
       "correct": false,
-      "cer": 0.5,
+      "cer": 1.0,
       "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\43\\43_163_final_torso_crop.png",
       "gt": "50",
-      "pred": "25",
-      "confidence": 0.743806779384613,
-      "correct": false,
-      "cer": 0.5,
-      "ned": 1.0
-    },
-    {
-      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\43\\43_164_final_torso_crop.png",
-      "gt": "50",
       "pred": "10",
-      "confidence": 0.7565075755119324,
+      "confidence": 0.943853497505188,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
     },
     {
-      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\43\\43_165_final_torso_crop.png",
+      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\43\\43_164_final_torso_crop.png",
       "gt": "50",
-      "pred": "27",
-      "confidence": 0.8718395233154297,
+      "pred": "9",
+      "confidence": 0.6535103917121887,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
+    },
+    {
+      "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\43\\43_165_final_torso_crop.png",
+      "gt": "50",
+      "pred": "10",
+      "confidence": 0.8269442915916443,
+      "correct": false,
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\43\\43_166_final_torso_crop.png",
       "gt": "50",
-      "pred": "25",
-      "confidence": 0.8652905821800232,
+      "pred": "10",
+      "confidence": 0.871585488319397,
       "correct": false,
       "cer": 0.5,
-      "ned": 1.0
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\43\\43_167_final_torso_crop.png",
       "gt": "50",
-      "pred": "8",
-      "confidence": 0.6690304279327393,
+      "pred": "10",
+      "confidence": 0.8564342260360718,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\44\\44_153_final_torso_crop.png",
       "gt": "8",
       "pred": "6",
-      "confidence": 0.7875993847846985,
+      "confidence": 0.754464328289032,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1783,7 +1792,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\44\\44_154_final_torso_crop.png",
       "gt": "8",
       "pred": "8",
-      "confidence": 0.7158548831939697,
+      "confidence": 0.6450943946838379,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1791,17 +1800,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\44\\44_155_final_torso_crop.png",
       "gt": "8",
-      "pred": "5",
-      "confidence": 0.8165781497955322,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "8",
+      "confidence": 0.6540084481239319,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\44\\44_156_final_torso_crop.png",
       "gt": "8",
-      "pred": "6",
-      "confidence": 0.7498021125793457,
+      "pred": "29",
+      "confidence": 0.9421112537384033,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1810,7 +1819,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\44\\44_157_final_torso_crop.png",
       "gt": "8",
       "pred": "6",
-      "confidence": 0.9348443746566772,
+      "confidence": 0.9019385576248169,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1819,7 +1828,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\44\\44_158_final_torso_crop.png",
       "gt": "8",
       "pred": "6",
-      "confidence": 0.7491521239280701,
+      "confidence": 0.8043520450592041,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1828,7 +1837,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\45\\45_215_final_torso_crop.png",
       "gt": "9",
       "pred": "20",
-      "confidence": 0.9785208702087402,
+      "confidence": 0.9819468259811401,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1837,7 +1846,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\45\\45_216_final_torso_crop.png",
       "gt": "9",
       "pred": "9",
-      "confidence": 0.9562901258468628,
+      "confidence": 0.6685680150985718,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1846,7 +1855,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\45\\45_217_final_torso_crop.png",
       "gt": "9",
       "pred": "9",
-      "confidence": 0.7251302003860474,
+      "confidence": 0.7681695818901062,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1855,7 +1864,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\45\\45_218_final_torso_crop.png",
       "gt": "9",
       "pred": "8",
-      "confidence": 0.7519898414611816,
+      "confidence": 0.9492762088775635,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1864,7 +1873,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\45\\45_219_final_torso_crop.png",
       "gt": "9",
       "pred": "9",
-      "confidence": 0.6636092662811279,
+      "confidence": 0.7326849699020386,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1873,7 +1882,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\45\\45_220_final_torso_crop.png",
       "gt": "9",
       "pred": "9",
-      "confidence": 0.948698878288269,
+      "confidence": 0.7398066520690918,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -1881,8 +1890,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\46\\46_320_final_torso_crop.png",
       "gt": "38",
-      "pred": "10",
-      "confidence": 0.7971259951591492,
+      "pred": "40",
+      "confidence": 0.6971730589866638,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1890,8 +1899,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\46\\46_321_final_torso_crop.png",
       "gt": "38",
-      "pred": "27",
-      "confidence": 0.6658685803413391,
+      "pred": "40",
+      "confidence": 0.8066722750663757,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1900,7 +1909,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\46\\46_322_final_torso_crop.png",
       "gt": "38",
       "pred": "10",
-      "confidence": 0.7819201946258545,
+      "confidence": 0.9068840742111206,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1909,7 +1918,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\46\\46_323_final_torso_crop.png",
       "gt": "38",
       "pred": "10",
-      "confidence": 0.7679430842399597,
+      "confidence": 0.72857666015625,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1917,8 +1926,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\46\\46_324_final_torso_crop.png",
       "gt": "38",
-      "pred": "5",
-      "confidence": 0.48449254035949707,
+      "pred": "4",
+      "confidence": 0.40322500467300415,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1926,8 +1935,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\46\\46_325_final_torso_crop.png",
       "gt": "38",
-      "pred": "5",
-      "confidence": 0.5947698354721069,
+      "pred": "40",
+      "confidence": 0.8116444945335388,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1935,17 +1944,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\48\\48_230_final_torso_crop.png",
       "gt": "59",
-      "pred": "93",
-      "confidence": 0.9174811840057373,
+      "pred": "40",
+      "confidence": 0.8346406817436218,
       "correct": false,
-      "cer": 0.5,
+      "cer": 1.0,
       "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\48\\48_235_final_torso_crop.png",
       "gt": "59",
-      "pred": "4",
-      "confidence": 0.7156777381896973,
+      "pred": "6",
+      "confidence": 0.6537500619888306,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1953,8 +1962,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\48\\48_236_final_torso_crop.png",
       "gt": "59",
-      "pred": "4",
-      "confidence": 0.4948725700378418,
+      "pred": "6",
+      "confidence": 0.8684889078140259,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1962,17 +1971,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\48\\48_237_final_torso_crop.png",
       "gt": "59",
-      "pred": "6",
-      "confidence": 0.5135230422019958,
+      "pred": "9",
+      "confidence": 0.7089686393737793,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.33333333333333337,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\48\\48_238_final_torso_crop.png",
       "gt": "59",
-      "pred": "27",
-      "confidence": 0.7541579008102417,
+      "pred": "6",
+      "confidence": 0.6692948341369629,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1980,8 +1989,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\48\\48_239_final_torso_crop.png",
       "gt": "59",
-      "pred": "27",
-      "confidence": 0.9699241518974304,
+      "pred": "14",
+      "confidence": 0.830331027507782,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -1989,8 +1998,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\52\\52_594_final_torso_crop.png",
       "gt": "36",
-      "pred": "33",
-      "confidence": 0.959453284740448,
+      "pred": "34",
+      "confidence": 0.9660369753837585,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -1999,7 +2008,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\52\\52_595_final_torso_crop.png",
       "gt": "36",
       "pred": "33",
-      "confidence": 0.9874927401542664,
+      "confidence": 0.900490403175354,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -2007,17 +2016,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\52\\52_596_final_torso_crop.png",
       "gt": "36",
-      "pred": "20",
-      "confidence": 0.9993700981140137,
+      "pred": "33",
+      "confidence": 0.9588160514831543,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\52\\52_597_final_torso_crop.png",
       "gt": "36",
-      "pred": "33",
-      "confidence": 0.9973710775375366,
+      "pred": "34",
+      "confidence": 0.8497056365013123,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -2026,7 +2035,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\52\\52_598_final_torso_crop.png",
       "gt": "36",
       "pred": "33",
-      "confidence": 0.995487630367279,
+      "confidence": 0.924693763256073,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -2035,7 +2044,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\52\\52_599_final_torso_crop.png",
       "gt": "36",
       "pred": "20",
-      "confidence": 0.9988447427749634,
+      "confidence": 0.9989304542541504,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2044,7 +2053,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\54\\54_608_final_torso_crop.png",
       "gt": "53",
       "pred": "3",
-      "confidence": 0.5266411900520325,
+      "confidence": 0.5494221448898315,
       "correct": false,
       "cer": 0.33333333333333337,
       "ned": 0.5
@@ -2052,17 +2061,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\54\\54_609_final_torso_crop.png",
       "gt": "53",
-      "pred": "6",
-      "confidence": 0.7949596047401428,
+      "pred": "3",
+      "confidence": 0.5598788261413574,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.33333333333333337,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\54\\54_610_final_torso_crop.png",
       "gt": "53",
       "pred": "6",
-      "confidence": 0.8526256084442139,
+      "confidence": 0.7238695621490479,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2070,8 +2079,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\54\\54_611_final_torso_crop.png",
       "gt": "53",
-      "pred": "6",
-      "confidence": 0.6865115761756897,
+      "pred": "29",
+      "confidence": 0.9350079298019409,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2079,8 +2088,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\54\\54_612_final_torso_crop.png",
       "gt": "53",
-      "pred": "6",
-      "confidence": 0.6483347415924072,
+      "pred": "29",
+      "confidence": 0.8730325102806091,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2088,17 +2097,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\54\\54_613_final_torso_crop.png",
       "gt": "53",
-      "pred": "3",
-      "confidence": 0.605149507522583,
+      "pred": "6",
+      "confidence": 0.7131127715110779,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\55\\55_614_final_torso_crop.png",
       "gt": "11",
       "pred": "8",
-      "confidence": 0.8207541704177856,
+      "confidence": 0.7057458162307739,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2107,7 +2116,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\55\\55_615_final_torso_crop.png",
       "gt": "11",
       "pred": "8",
-      "confidence": 0.784155011177063,
+      "confidence": 0.6422632932662964,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2115,8 +2124,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\55\\55_616_final_torso_crop.png",
       "gt": "11",
-      "pred": "8",
-      "confidence": 0.8316973447799683,
+      "pred": "9",
+      "confidence": 0.6595481038093567,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2124,8 +2133,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\55\\55_617_final_torso_crop.png",
       "gt": "11",
-      "pred": "3",
-      "confidence": 0.4383341670036316,
+      "pred": "25",
+      "confidence": 0.9376906156539917,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2133,8 +2142,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\55\\55_618_final_torso_crop.png",
       "gt": "11",
-      "pred": "3",
-      "confidence": 0.6430741548538208,
+      "pred": "8",
+      "confidence": 0.7322080731391907,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2142,8 +2151,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\55\\55_628_final_torso_crop.png",
       "gt": "11",
-      "pred": "3",
-      "confidence": 0.7184075117111206,
+      "pred": "6",
+      "confidence": 0.6618977189064026,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2151,8 +2160,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\55\\55_629_final_torso_crop.png",
       "gt": "11",
-      "pred": "9",
-      "confidence": 0.6605855226516724,
+      "pred": "8",
+      "confidence": 0.8201481103897095,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2161,7 +2170,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\55\\55_630_final_torso_crop.png",
       "gt": "11",
       "pred": "3",
-      "confidence": 0.968806266784668,
+      "confidence": 0.8574291467666626,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2169,8 +2178,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\55\\55_631_final_torso_crop.png",
       "gt": "11",
-      "pred": "3",
-      "confidence": 0.8371413946151733,
+      "pred": "9",
+      "confidence": 0.9861599206924438,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2178,8 +2187,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\55\\55_632_final_torso_crop.png",
       "gt": "11",
-      "pred": "8",
-      "confidence": 0.6167678236961365,
+      "pred": "6",
+      "confidence": 0.6669536828994751,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2187,17 +2196,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\56\\56_618_final_torso_crop.png",
       "gt": "20",
-      "pred": "20",
-      "confidence": 0.9703855514526367,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "10",
+      "confidence": 0.8423513174057007,
+      "correct": false,
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\56\\56_619_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9988088607788086,
+      "confidence": 0.999175488948822,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2206,7 +2215,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\56\\56_620_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.998562216758728,
+      "confidence": 0.9670445322990417,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2215,7 +2224,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\56\\56_621_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9960159063339233,
+      "confidence": 0.9992210865020752,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2224,7 +2233,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\56\\56_622_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.998672366142273,
+      "confidence": 0.9992789626121521,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2233,7 +2242,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\56\\56_623_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.988855242729187,
+      "confidence": 0.9411391019821167,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2242,7 +2251,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\58\\58_35_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9949895739555359,
+      "confidence": 0.9188134074211121,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2251,7 +2260,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\58\\58_36_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9955798387527466,
+      "confidence": 0.9941725134849548,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2260,7 +2269,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\58\\58_37_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9977836608886719,
+      "confidence": 0.9979690313339233,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2269,7 +2278,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\58\\58_38_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9932159185409546,
+      "confidence": 0.9979206919670105,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2278,7 +2287,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\58\\58_39_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9985545873641968,
+      "confidence": 0.9996970891952515,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2287,7 +2296,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\58\\58_40_final_torso_crop.png",
       "gt": "20",
       "pred": "20",
-      "confidence": 0.9993986487388611,
+      "confidence": 0.9996892213821411,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2296,7 +2305,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\59\\59_684_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.8434593677520752,
+      "confidence": 0.9992080926895142,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2305,7 +2314,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\59\\59_685_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.9659637212753296,
+      "confidence": 0.995335042476654,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2314,7 +2323,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\59\\59_686_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.9802508354187012,
+      "confidence": 0.999245822429657,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2323,7 +2332,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\59\\59_687_final_torso_crop.png",
       "gt": "34",
       "pred": "34",
-      "confidence": 0.7221383452415466,
+      "confidence": 0.9991939067840576,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2331,26 +2340,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\59\\59_688_final_torso_crop.png",
       "gt": "34",
-      "pred": "20",
-      "confidence": 0.9987928867340088,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "34",
+      "confidence": 0.9876364469528198,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\59\\59_689_final_torso_crop.png",
       "gt": "34",
-      "pred": "20",
-      "confidence": 0.9412879347801208,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "34",
+      "confidence": 0.9143385887145996,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\60\\60_420_final_torso_crop.png",
       "gt": "25",
       "pred": "20",
-      "confidence": 0.999036431312561,
+      "confidence": 0.9976868033409119,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -2359,7 +2368,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\60\\60_421_final_torso_crop.png",
       "gt": "25",
       "pred": "20",
-      "confidence": 0.9978299140930176,
+      "confidence": 0.9975656867027283,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -2367,17 +2376,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\60\\60_422_final_torso_crop.png",
       "gt": "25",
-      "pred": "33",
-      "confidence": 0.8754112124443054,
+      "pred": "20",
+      "confidence": 0.9579914808273315,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\60\\60_423_final_torso_crop.png",
       "gt": "25",
       "pred": "20",
-      "confidence": 0.9835367202758789,
+      "confidence": 0.9785326719284058,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -2386,7 +2395,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\60\\60_424_final_torso_crop.png",
       "gt": "25",
       "pred": "20",
-      "confidence": 0.9906213283538818,
+      "confidence": 0.999072253704071,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -2395,7 +2404,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\60\\60_425_final_torso_crop.png",
       "gt": "25",
       "pred": "20",
-      "confidence": 0.9822533130645752,
+      "confidence": 0.996365487575531,
       "correct": false,
       "cer": 0.5,
       "ned": 0.5
@@ -2404,7 +2413,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\62\\62_595_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9996165037155151,
+      "confidence": 0.9947929382324219,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2413,7 +2422,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\62\\62_596_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9996232986450195,
+      "confidence": 0.9997298717498779,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2422,7 +2431,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\62\\62_597_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9996720552444458,
+      "confidence": 0.9994046092033386,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2431,7 +2440,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\62\\62_598_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9997174739837646,
+      "confidence": 0.9990682601928711,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2440,7 +2449,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\62\\62_599_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9995757937431335,
+      "confidence": 0.9988818168640137,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2449,7 +2458,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\62\\62_615_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9511171579360962,
+      "confidence": 0.9010095596313477,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2457,17 +2466,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\62\\62_616_final_torso_crop.png",
       "gt": "14",
-      "pred": "14",
-      "confidence": 0.9759793281555176,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "10",
+      "confidence": 0.9467010498046875,
+      "correct": false,
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\62\\62_617_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9987141489982605,
+      "confidence": 0.9995612502098083,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2476,7 +2485,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\62\\62_618_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9995275735855103,
+      "confidence": 0.9984081983566284,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2485,7 +2494,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\62\\62_619_final_torso_crop.png",
       "gt": "14",
       "pred": "14",
-      "confidence": 0.9996241331100464,
+      "confidence": 0.9994844794273376,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2494,7 +2503,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\63\\63_269_final_torso_crop.png",
       "gt": "14",
       "pred": "6",
-      "confidence": 0.9039286375045776,
+      "confidence": 0.7884033918380737,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2503,7 +2512,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\63\\63_270_final_torso_crop.png",
       "gt": "14",
       "pred": "6",
-      "confidence": 0.8877379894256592,
+      "confidence": 0.9593135118484497,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2512,7 +2521,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\63\\63_271_final_torso_crop.png",
       "gt": "14",
       "pred": "6",
-      "confidence": 0.8815082311630249,
+      "confidence": 0.9312798976898193,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2521,7 +2530,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\63\\63_272_final_torso_crop.png",
       "gt": "14",
       "pred": "6",
-      "confidence": 0.8844518661499023,
+      "confidence": 0.9343907833099365,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2530,7 +2539,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\63\\63_273_final_torso_crop.png",
       "gt": "14",
       "pred": "6",
-      "confidence": 0.937572717666626,
+      "confidence": 0.9799408912658691,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2539,7 +2548,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\63\\63_274_final_torso_crop.png",
       "gt": "14",
       "pred": "6",
-      "confidence": 0.8894658088684082,
+      "confidence": 0.8808476328849792,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2547,44 +2556,44 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\64\\64_77_final_torso_crop.png",
       "gt": "93",
-      "pred": "3",
-      "confidence": 0.7528051733970642,
+      "pred": "14",
+      "confidence": 0.8624019026756287,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\64\\64_78_final_torso_crop.png",
       "gt": "93",
-      "pred": "3",
-      "confidence": 0.5897436141967773,
-      "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "pred": "93",
+      "confidence": 0.8789823055267334,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\64\\64_79_final_torso_crop.png",
       "gt": "93",
-      "pred": "29",
-      "confidence": 0.8193482160568237,
+      "pred": "33",
+      "confidence": 0.917731523513794,
       "correct": false,
       "cer": 0.5,
-      "ned": 1.0
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\64\\64_80_final_torso_crop.png",
       "gt": "93",
-      "pred": "3",
-      "confidence": 0.6943274736404419,
+      "pred": "33",
+      "confidence": 0.9575142860412598,
       "correct": false,
-      "cer": 0.33333333333333337,
+      "cer": 0.5,
       "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\64\\64_81_final_torso_crop.png",
       "gt": "93",
       "pred": "29",
-      "confidence": 0.8453963994979858,
+      "confidence": 0.9851836562156677,
       "correct": false,
       "cer": 0.5,
       "ned": 1.0
@@ -2593,7 +2602,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\64\\64_82_final_torso_crop.png",
       "gt": "93",
       "pred": "29",
-      "confidence": 0.8128520250320435,
+      "confidence": 0.988359808921814,
       "correct": false,
       "cer": 0.5,
       "ned": 1.0
@@ -2601,8 +2610,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\65\\65_418_final_torso_crop.png",
       "gt": "11",
-      "pred": "6",
-      "confidence": 0.7065705060958862,
+      "pred": "9",
+      "confidence": 0.7090740203857422,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2610,8 +2619,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\65\\65_419_final_torso_crop.png",
       "gt": "11",
-      "pred": "3",
-      "confidence": 0.4727783203125,
+      "pred": "9",
+      "confidence": 0.7434250712394714,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2619,8 +2628,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\65\\65_420_final_torso_crop.png",
       "gt": "11",
-      "pred": "3",
-      "confidence": 0.6779084205627441,
+      "pred": "9",
+      "confidence": 0.7383177280426025,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2628,8 +2637,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\65\\65_421_final_torso_crop.png",
       "gt": "11",
-      "pred": "3",
-      "confidence": 0.6659018397331238,
+      "pred": "9",
+      "confidence": 0.6213833093643188,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2637,8 +2646,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\65\\65_422_final_torso_crop.png",
       "gt": "11",
-      "pred": "3",
-      "confidence": 0.5336849689483643,
+      "pred": "6",
+      "confidence": 0.7650619745254517,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2646,17 +2655,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\65\\65_423_final_torso_crop.png",
       "gt": "11",
-      "pred": "7",
-      "confidence": 0.697136640548706,
+      "pred": "10",
+      "confidence": 0.8881677389144897,
       "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "cer": 0.5,
+      "ned": 0.5
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\66\\66_516_final_torso_crop.png",
       "gt": "1",
-      "pred": "27",
-      "confidence": 0.7648730278015137,
+      "pred": "9",
+      "confidence": 0.718989372253418,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2664,17 +2673,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\66\\66_517_final_torso_crop.png",
       "gt": "1",
-      "pred": "10",
-      "confidence": 0.7176878452301025,
+      "pred": "9",
+      "confidence": 0.8658039569854736,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\66\\66_518_final_torso_crop.png",
       "gt": "1",
       "pred": "9",
-      "confidence": 0.7079392075538635,
+      "confidence": 0.7745731472969055,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2682,8 +2691,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\66\\66_519_final_torso_crop.png",
       "gt": "1",
-      "pred": "7",
-      "confidence": 0.7165023684501648,
+      "pred": "9",
+      "confidence": 0.8065112829208374,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2692,7 +2701,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\66\\66_520_final_torso_crop.png",
       "gt": "1",
       "pred": "9",
-      "confidence": 0.7808648347854614,
+      "confidence": 0.7624971270561218,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2700,26 +2709,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\66\\66_701_final_torso_crop.png",
       "gt": "1",
-      "pred": "19",
-      "confidence": 0.7522971034049988,
+      "pred": "9",
+      "confidence": 0.6610296964645386,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\66\\66_702_final_torso_crop.png",
       "gt": "1",
-      "pred": "21",
-      "confidence": 0.7780541181564331,
+      "pred": "8",
+      "confidence": 0.6491098999977112,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\66\\66_703_final_torso_crop.png",
       "gt": "1",
       "pred": "9",
-      "confidence": 0.6841281056404114,
+      "confidence": 0.7076666951179504,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2727,26 +2736,26 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\66\\66_704_final_torso_crop.png",
       "gt": "1",
-      "pred": "21",
-      "confidence": 0.9368185997009277,
+      "pred": "9",
+      "confidence": 0.628191351890564,
       "correct": false,
-      "cer": 0.33333333333333337,
-      "ned": 0.5
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\66\\66_705_final_torso_crop.png",
       "gt": "1",
-      "pred": "1",
-      "confidence": 0.4247327446937561,
-      "correct": true,
-      "cer": 0.0,
-      "ned": 0.0
+      "pred": "9",
+      "confidence": 0.6993520855903625,
+      "correct": false,
+      "cer": 1.0,
+      "ned": 1.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\69\\69_437_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.8895310759544373,
+      "confidence": 0.9612693190574646,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2754,8 +2763,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\69\\69_438_final_torso_crop.png",
       "gt": "44",
-      "pred": "25",
-      "confidence": 0.7872433066368103,
+      "pred": "6",
+      "confidence": 0.8325656652450562,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2764,7 +2773,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\69\\69_439_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.9472339153289795,
+      "confidence": 0.6527847647666931,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2773,7 +2782,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\69\\69_440_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.8065551519393921,
+      "confidence": 0.8494389057159424,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2782,7 +2791,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\69\\69_441_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.8848147392272949,
+      "confidence": 0.7032004594802856,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2791,7 +2800,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\69\\69_726_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.7066617012023926,
+      "confidence": 0.9895606637001038,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2800,7 +2809,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\69\\69_727_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.7462883591651917,
+      "confidence": 0.8511446714401245,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2809,7 +2818,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\69\\69_728_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.7629536390304565,
+      "confidence": 0.8906658887863159,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2818,7 +2827,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\69\\69_729_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.6509013175964355,
+      "confidence": 0.7399951219558716,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2827,7 +2836,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\69\\69_730_final_torso_crop.png",
       "gt": "44",
       "pred": "6",
-      "confidence": 0.8478203415870667,
+      "confidence": 0.7749750018119812,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2835,8 +2844,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\70\\70_347_final_torso_crop.png",
       "gt": "4",
-      "pred": "3",
-      "confidence": 0.8346399068832397,
+      "pred": "6",
+      "confidence": 0.8091263771057129,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2845,7 +2854,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\70\\70_348_final_torso_crop.png",
       "gt": "4",
       "pred": "6",
-      "confidence": 0.7178859710693359,
+      "confidence": 0.9236392974853516,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2854,7 +2863,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\70\\70_349_final_torso_crop.png",
       "gt": "4",
       "pred": "6",
-      "confidence": 0.7540541291236877,
+      "confidence": 0.9912015199661255,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2862,8 +2871,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\70\\70_350_final_torso_crop.png",
       "gt": "4",
-      "pred": "6",
-      "confidence": 0.7223438024520874,
+      "pred": "9",
+      "confidence": 0.7440640330314636,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2871,8 +2880,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\70\\70_351_final_torso_crop.png",
       "gt": "4",
-      "pred": "3",
-      "confidence": 0.7344779372215271,
+      "pred": "6",
+      "confidence": 0.8927398324012756,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2880,8 +2889,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\70\\70_352_final_torso_crop.png",
       "gt": "4",
-      "pred": "3",
-      "confidence": 0.5244949460029602,
+      "pred": "6",
+      "confidence": 0.9389376640319824,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2890,7 +2899,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\72\\72_417_final_torso_crop.png",
       "gt": "8",
       "pred": "20",
-      "confidence": 0.9940798282623291,
+      "confidence": 0.9994189739227295,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2898,8 +2907,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\72\\72_418_final_torso_crop.png",
       "gt": "8",
-      "pred": "33",
-      "confidence": 0.9463530778884888,
+      "pred": "36",
+      "confidence": 0.8452116847038269,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2908,7 +2917,7 @@
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\72\\72_419_final_torso_crop.png",
       "gt": "8",
       "pred": "8",
-      "confidence": 0.8211964964866638,
+      "confidence": 0.9435838460922241,
       "correct": true,
       "cer": 0.0,
       "ned": 0.0
@@ -2916,17 +2925,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\72\\72_420_final_torso_crop.png",
       "gt": "8",
-      "pred": "20",
-      "confidence": 0.9975996017456055,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "8",
+      "confidence": 0.9646100997924805,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\72\\72_421_final_torso_crop.png",
       "gt": "8",
-      "pred": "20",
-      "confidence": 0.9985207319259644,
+      "pred": "34",
+      "confidence": 0.8310399055480957,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2934,8 +2943,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\72\\72_422_final_torso_crop.png",
       "gt": "8",
-      "pred": "9",
-      "confidence": 0.9031810760498047,
+      "pred": "36",
+      "confidence": 0.9142676591873169,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2943,8 +2952,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\72\\72_423_final_torso_crop.png",
       "gt": "8",
-      "pred": "9",
-      "confidence": 0.7421224117279053,
+      "pred": "4",
+      "confidence": 0.9036473631858826,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2952,8 +2961,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\72\\72_424_final_torso_crop.png",
       "gt": "8",
-      "pred": "9",
-      "confidence": 0.6624176502227783,
+      "pred": "20",
+      "confidence": 0.9846204519271851,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2961,8 +2970,8 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\72\\72_425_final_torso_crop.png",
       "gt": "8",
-      "pred": "9",
-      "confidence": 0.8234763741493225,
+      "pred": "3",
+      "confidence": 0.9754198789596558,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2970,17 +2979,17 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\73\\73_402_final_torso_crop.png",
       "gt": "36",
-      "pred": "20",
-      "confidence": 0.9984833598136902,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "36",
+      "confidence": 0.9844865798950195,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\73\\73_403_final_torso_crop.png",
       "gt": "36",
       "pred": "20",
-      "confidence": 0.9994189739227295,
+      "confidence": 0.9432326555252075,
       "correct": false,
       "cer": 1.0,
       "ned": 1.0
@@ -2988,38 +2997,38 @@
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\73\\73_404_final_torso_crop.png",
       "gt": "36",
-      "pred": "20",
-      "confidence": 0.9992052912712097,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "36",
+      "confidence": 0.9921762347221375,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\73\\73_405_final_torso_crop.png",
       "gt": "36",
-      "pred": "20",
-      "confidence": 0.998616099357605,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "36",
+      "confidence": 0.9476913213729858,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\73\\73_406_final_torso_crop.png",
       "gt": "36",
-      "pred": "20",
-      "confidence": 0.9986135959625244,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "36",
+      "confidence": 0.9359545707702637,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     },
     {
       "image": "C:\\Users\\toby0\\Documents\\UBC\\COSC-419\\Project\\AliXd\\test\\73\\73_407_final_torso_crop.png",
       "gt": "36",
-      "pred": "20",
-      "confidence": 0.9896127581596375,
-      "correct": false,
-      "cer": 1.0,
-      "ned": 1.0
+      "pred": "36",
+      "confidence": 0.8836380839347839,
+      "correct": true,
+      "cer": 0.0,
+      "ned": 0.0
     }
   ],
   "tracklet_results": [
@@ -3028,441 +3037,490 @@
       "gt": "4",
       "pred": "6",
       "correct": false,
-      "vote_score": 3.1046427488327026,
-      "vote_confidence": 0.6627697556804797,
-      "vote_mode": "weighted"
+      "vote_score": 5.84939444065094,
+      "vote_confidence": 1.0,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "1",
       "gt": "93",
-      "pred": "3",
+      "pred": "30",
       "correct": false,
-      "vote_score": 2.4402119517326355,
-      "vote_confidence": 0.647220999042637,
-      "vote_mode": "weighted"
+      "vote_score": 1.6827154159545898,
+      "vote_confidence": 0.3439985577329371,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "2",
       "gt": "25",
-      "pred": "20",
+      "pred": "36",
       "correct": false,
-      "vote_score": 2.8206236958503723,
-      "vote_confidence": 0.5204046429756164,
-      "vote_mode": "weighted"
+      "vote_score": 1.9343120157718658,
+      "vote_confidence": 0.34476562469465044,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "5",
       "gt": "11",
       "pred": "6",
       "correct": false,
-      "vote_score": 1.9764928817749023,
-      "vote_confidence": 0.523240553129159,
-      "vote_mode": "weighted"
+      "vote_score": 3.5284064412117004,
+      "vote_confidence": 0.7254150830603598,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "6",
       "gt": "34",
       "pred": "34",
       "correct": true,
-      "vote_score": 4.6943279504776,
-      "vote_confidence": 0.8600208642905812,
-      "vote_mode": "weighted"
+      "vote_score": 5.454502928256989,
+      "vote_confidence": 0.8322529165311294,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "7",
       "gt": "44",
       "pred": "6",
       "correct": false,
-      "vote_score": 3.04345840215683,
-      "vote_confidence": 0.38225216980467003,
-      "vote_mode": "weighted"
+      "vote_score": 2.2722002267837524,
+      "vote_confidence": 0.26519310181858924,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "8",
       "gt": "33",
       "pred": "33",
       "correct": true,
-      "vote_score": 4.955482065677643,
-      "vote_confidence": 0.8322336094609283,
-      "vote_mode": "weighted"
+      "vote_score": 5.19174845814705,
+      "vote_confidence": 0.8400883808799876,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "9",
       "gt": "20",
       "pred": "20",
       "correct": true,
-      "vote_score": 9.983509719371796,
+      "vote_score": 10.86720606684685,
       "vote_confidence": 1.0,
-      "vote_mode": "weighted"
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "10",
       "gt": "10",
       "pred": "10",
       "correct": true,
-      "vote_score": 5.996845066547394,
+      "vote_score": 6.562912702560425,
       "vote_confidence": 1.0,
-      "vote_mode": "weighted"
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "11",
       "gt": "31",
-      "pred": "28",
+      "pred": "29",
       "correct": false,
-      "vote_score": 1.6233280897140503,
-      "vote_confidence": 0.39261832582261635,
-      "vote_mode": "weighted"
+      "vote_score": 2.995854866504669,
+      "vote_confidence": 0.5619439868449255,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "12",
       "gt": "14",
       "pred": "33",
       "correct": false,
-      "vote_score": 2.790972113609314,
-      "vote_confidence": 0.5976963297107439,
-      "vote_mode": "weighted"
+      "vote_score": 3.042865771055222,
+      "vote_confidence": 0.5491850855656755,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "13",
       "gt": "33",
-      "pred": "34",
+      "pred": "29",
       "correct": false,
-      "vote_score": 2.844248652458191,
-      "vote_confidence": 0.3686502054177702,
-      "vote_mode": "weighted"
+      "vote_score": 5.870882612466813,
+      "vote_confidence": 0.5854917361891399,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "14",
       "gt": "8",
-      "pred": "3",
+      "pred": "6",
       "correct": false,
-      "vote_score": 1.6009376049041748,
-      "vote_confidence": 0.3411671625452071,
-      "vote_mode": "weighted"
+      "vote_score": 2.3612444400787354,
+      "vote_confidence": 0.5192958893900018,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "15",
       "gt": "36",
-      "pred": "20",
+      "pred": "34",
       "correct": false,
-      "vote_score": 1.9923580884933472,
-      "vote_confidence": 0.35289444314875656,
-      "vote_mode": "weighted"
+      "vote_score": 3.223563081026078,
+      "vote_confidence": 0.5138024452381962,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "16",
       "gt": "36",
-      "pred": "10",
+      "pred": "40",
       "correct": false,
-      "vote_score": 1.4987268447875977,
-      "vote_confidence": 0.3279579345104194,
-      "vote_mode": "weighted"
+      "vote_score": 3.9372657179832466,
+      "vote_confidence": 0.6828879486059839,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "17",
       "gt": "8",
-      "pred": "20",
-      "correct": false,
-      "vote_score": 3.7523274421691895,
-      "vote_confidence": 0.7175911193596367,
-      "vote_mode": "weighted"
+      "pred": "8",
+      "correct": true,
+      "vote_score": 2.2959460020065308,
+      "vote_confidence": 0.4669103136658373,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "18",
       "gt": "1",
-      "pred": "8",
+      "pred": "9",
       "correct": false,
-      "vote_score": 2.735294282436371,
-      "vote_confidence": 0.6566354385355864,
-      "vote_mode": "weighted"
+      "vote_score": 2.521687924861908,
+      "vote_confidence": 0.5084567193297811,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "26",
       "gt": "9",
-      "pred": "3",
-      "correct": false,
-      "vote_score": 1.3662219643592834,
-      "vote_confidence": 0.32505848638818535,
-      "vote_mode": "weighted"
+      "pred": "9",
+      "correct": true,
+      "vote_score": 2.405261516571045,
+      "vote_confidence": 0.5051842349066896,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "27",
       "gt": "4",
       "pred": "6",
       "correct": false,
-      "vote_score": 3.264489471912384,
-      "vote_confidence": 0.7234307085139994,
-      "vote_mode": "weighted"
+      "vote_score": 5.764893352985382,
+      "vote_confidence": 1.0,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "28",
       "gt": "8",
       "pred": "20",
       "correct": false,
-      "vote_score": 4.681883454322815,
-      "vote_confidence": 0.5220239682921607,
-      "vote_mode": "weighted"
+      "vote_score": 2.668424808979035,
+      "vote_confidence": 0.3785701905580495,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "30",
       "gt": "33",
       "pred": "33",
       "correct": true,
-      "vote_score": 5.863668859004974,
-      "vote_confidence": 1.0,
-      "vote_mode": "weighted"
+      "vote_score": 3.2659444332122805,
+      "vote_confidence": 0.5056100201345778,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "31",
       "gt": "14",
       "pred": "6",
       "correct": false,
-      "vote_score": 3.37406462430954,
-      "vote_confidence": 0.8286583238334336,
-      "vote_mode": "weighted"
+      "vote_score": 5.156748473644257,
+      "vote_confidence": 1.0,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "32",
       "gt": "10",
       "pred": "10",
       "correct": true,
-      "vote_score": 5.994879245758057,
+      "vote_score": 6.506820046901703,
       "vote_confidence": 1.0,
-      "vote_mode": "weighted"
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "33",
       "gt": "31",
-      "pred": "31",
-      "correct": true,
-      "vote_score": 2.8157178163528442,
-      "vote_confidence": 0.4928190827606691,
-      "vote_mode": "weighted"
+      "pred": "33",
+      "correct": false,
+      "vote_score": 2.18404558300972,
+      "vote_confidence": 0.3627364285091181,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "35",
       "gt": "44",
       "pred": "6",
       "correct": false,
-      "vote_score": 1.988208532333374,
-      "vote_confidence": 0.44130253384245993,
-      "vote_mode": "weighted"
+      "vote_score": 3.597523033618927,
+      "vote_confidence": 0.6468130128234104,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "36",
       "gt": "14",
       "pred": "14",
       "correct": true,
-      "vote_score": 6.991843223571777,
+      "vote_score": 7.502497762441635,
       "vote_confidence": 1.0,
-      "vote_mode": "weighted"
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "37",
       "gt": "1",
-      "pred": "11",
+      "pred": "4",
       "correct": false,
-      "vote_score": 3.114258050918579,
-      "vote_confidence": 0.4120648452327159,
-      "vote_mode": "weighted"
+      "vote_score": 2.0422001481056213,
+      "vote_confidence": 0.2948959041673927,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "42",
       "gt": "34",
       "pred": "34",
       "correct": true,
-      "vote_score": 5.993952810764313,
-      "vote_confidence": 0.8573633532899416,
-      "vote_mode": "weighted"
+      "vote_score": 7.6974204063415534,
+      "vote_confidence": 1.0,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "43",
       "gt": "50",
-      "pred": "25",
+      "pred": "10",
       "correct": false,
-      "vote_score": 2.5841420888900757,
-      "vote_confidence": 0.5293724684840563,
-      "vote_mode": "weighted"
+      "vote_score": 3.8486992537975313,
+      "vote_confidence": 0.7117710773258967,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "44",
       "gt": "8",
       "pred": "6",
       "correct": false,
-      "vote_score": 3.2213979959487915,
-      "vote_confidence": 0.6776425111323843,
-      "vote_mode": "weighted"
+      "vote_score": 2.460754930973053,
+      "vote_confidence": 0.5130655756307902,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "45",
       "gt": "9",
       "pred": "9",
       "correct": true,
-      "vote_score": 3.293728470802307,
-      "vote_confidence": 0.6555676095781717,
-      "vote_mode": "weighted"
+      "vote_score": 2.9092292189598083,
+      "vote_confidence": 0.5890741444802857,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "46",
       "gt": "38",
-      "pred": "10",
+      "pred": "40",
       "correct": false,
-      "vote_score": 2.3469892740249634,
-      "vote_confidence": 0.5735386894806501,
-      "vote_mode": "weighted"
+      "vote_score": 2.5470388114452365,
+      "vote_confidence": 0.5860589221990644,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "48",
       "gt": "59",
-      "pred": "27",
+      "pred": "6",
       "correct": false,
-      "vote_score": 1.7240820527076721,
-      "vote_confidence": 0.3949211113415154,
-      "vote_mode": "weighted"
+      "vote_score": 2.1915338039398193,
+      "vote_confidence": 0.46313336538215066,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "52",
       "gt": "36",
       "pred": "33",
       "correct": false,
-      "vote_score": 3.93980473279953,
-      "vote_confidence": 0.6634880003186399,
-      "vote_mode": "weighted"
+      "vote_score": 3.0624002397060397,
+      "vote_confidence": 0.4972607038606805,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "54",
       "gt": "53",
-      "pred": "6",
+      "pred": "29",
       "correct": false,
-      "vote_score": 2.9824315309524536,
-      "vote_confidence": 0.7249077383990006,
-      "vote_mode": "weighted"
+      "vote_score": 1.988844484090805,
+      "vote_confidence": 0.43854210437252017,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "55",
       "gt": "11",
-      "pred": "3",
+      "pred": "8",
       "correct": false,
-      "vote_score": 3.6057634949684143,
-      "vote_confidence": 0.49260925773289566,
-      "vote_mode": "weighted"
+      "vote_score": 2.9003652930259705,
+      "vote_confidence": 0.373574825933521,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "56",
       "gt": "20",
       "pred": "20",
       "correct": true,
-      "vote_score": 5.951300144195557,
-      "vote_confidence": 1.0,
-      "vote_mode": "weighted"
+      "vote_score": 5.396445089578629,
+      "vote_confidence": 0.8534585121912699,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "58",
       "gt": "20",
       "pred": "20",
       "correct": true,
-      "vote_score": 5.979522228240967,
+      "vote_score": 6.499088150262834,
       "vote_confidence": 1.0,
-      "vote_mode": "weighted"
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "59",
       "gt": "34",
       "pred": "34",
       "correct": true,
-      "vote_score": 3.5118122696876526,
-      "vote_confidence": 0.6441454758815768,
-      "vote_mode": "weighted"
+      "vote_score": 6.4844536900520335,
+      "vote_confidence": 1.0,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "60",
       "gt": "25",
       "pred": "20",
       "correct": false,
-      "vote_score": 4.9532777070999146,
-      "vote_confidence": 0.8498099273219132,
-      "vote_mode": "weighted"
+      "vote_score": 6.519935822486879,
+      "vote_confidence": 1.0,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "62",
       "gt": "14",
       "pred": "14",
       "correct": true,
-      "vote_score": 9.92316746711731,
-      "vote_confidence": 1.0,
-      "vote_mode": "weighted"
+      "vote_score": 9.779375082254411,
+      "vote_confidence": 0.9037616138505745,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "63",
       "gt": "14",
       "pred": "6",
       "correct": false,
-      "vote_score": 5.384665250778198,
+      "vote_score": 5.474176108837128,
       "vote_confidence": 1.0,
-      "vote_mode": "weighted"
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "64",
       "gt": "93",
       "pred": "29",
       "correct": false,
-      "vote_score": 2.477596640586853,
-      "vote_confidence": 0.5488119420513946,
-      "vote_mode": "weighted"
+      "vote_score": 2.17089781165123,
+      "vote_confidence": 0.3530379640589388,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "65",
       "gt": "11",
-      "pred": "3",
+      "pred": "9",
       "correct": false,
-      "vote_score": 2.350273549556732,
-      "vote_confidence": 0.6260750226912429,
-      "vote_mode": "weighted"
+      "vote_score": 2.812200129032135,
+      "vote_confidence": 0.6174896455821755,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "66",
       "gt": "1",
       "pred": "9",
       "correct": false,
-      "vote_score": 2.1729321479797363,
-      "vote_confidence": 0.299141337242919,
-      "vote_mode": "weighted"
+      "vote_score": 6.624614715576172,
+      "vote_confidence": 0.9107596266969068,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "69",
       "gt": "44",
       "pred": "6",
       "correct": false,
-      "vote_score": 7.242760241031647,
-      "vote_confidence": 0.9019622716274653,
-      "vote_mode": "weighted"
+      "vote_score": 8.245600461959839,
+      "vote_confidence": 1.0,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "70",
       "gt": "4",
       "pred": "6",
       "correct": false,
-      "vote_score": 2.194283902645111,
-      "vote_confidence": 0.5117389853057249,
-      "vote_mode": "weighted"
+      "vote_score": 4.555644690990448,
+      "vote_confidence": 0.8596028438961455,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "72",
       "gt": "8",
-      "pred": "9",
+      "pred": "20",
       "correct": false,
-      "vote_score": 3.131197512149811,
-      "vote_confidence": 0.3969094244813847,
-      "vote_mode": "weighted"
+      "vote_score": 2.182443368434906,
+      "vote_confidence": 0.24746287961052102,
+      "vote_mode": "weighted",
+      "used_fallback": false
     },
     {
       "tracklet": "73",
       "gt": "36",
-      "pred": "20",
-      "correct": false,
-      "vote_score": 5.983950078487396,
-      "vote_confidence": 1.0,
-      "vote_mode": "weighted"
+      "pred": "36",
+      "correct": true,
+      "vote_score": 5.21834146976471,
+      "vote_confidence": 0.8341475481045242,
+      "vote_mode": "weighted",
+      "used_fallback": false
     }
   ]
 }

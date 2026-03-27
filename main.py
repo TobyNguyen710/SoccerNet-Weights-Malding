@@ -24,6 +24,7 @@ import shutil
 from enum import Enum
 import logging
 import random
+from collections import Counter
 
 import torch
 import torch.nn as nn
@@ -336,6 +337,55 @@ def split_samples_by_tracklet(
     return train_samples, val_samples
 
 
+def rebalance_train_samples(
+    train_samples: List[Tuple[Path, str]],
+    mode: str = 'none',
+    max_multiplier: float = 3.0,
+    target_count: int = 0,
+    seed: int = 42,
+) -> List[Tuple[Path, str]]:
+    """Rebalance train set by oversampling underrepresented labels (image-level)."""
+    if mode == 'none':
+        return train_samples
+    if mode != 'oversample':
+        raise ValueError(f"Unsupported class-balance mode: {mode}")
+    if not train_samples:
+        return train_samples
+
+    label_counts = Counter(label for _, label in train_samples)
+    max_count = max(label_counts.values())
+    desired = max_count if target_count <= 0 else max(target_count, max_count)
+    rng = random.Random(seed)
+
+    balanced: List[Tuple[Path, str]] = []
+    for img_path, label in train_samples:
+        count = label_counts[label]
+        raw_multiplier = desired / max(1, count)
+        multiplier = min(float(max_multiplier), raw_multiplier)
+        whole = int(multiplier)
+        frac = multiplier - whole
+
+        for _ in range(max(1, whole)):
+            balanced.append((img_path, label))
+        if frac > 0 and rng.random() < frac:
+            balanced.append((img_path, label))
+
+    before = Counter(label for _, label in train_samples)
+    after = Counter(label for _, label in balanced)
+    logger.info(
+        "Class balance (oversample): labels=%d before=%d samples after=%d samples "
+        "target=%d max_multiplier=%.2f",
+        len(before),
+        len(train_samples),
+        len(balanced),
+        desired,
+        max_multiplier,
+    )
+    logger.info("Class counts before: %s", dict(sorted(before.items(), key=lambda x: x[0])))
+    logger.info("Class counts after: %s", dict(sorted(after.items(), key=lambda x: x[0])))
+    return balanced
+
+
 def load_precomputed_kept_samples(kept_path: Path) -> List[Tuple[Path, str]]:
     """Load pre-scored kept samples from legibility_kept_samples.txt (tab-separated path\tlabel)."""
     if not kept_path.exists():
@@ -425,6 +475,9 @@ def create_parseq_dataset(
     val_fraction: float,
     seed: int,
     filter_by_legibility: bool,
+    class_balance_mode: str = 'none',
+    balance_max_multiplier: float = 3.0,
+    balance_target_count: int = 0,
 ) -> Tuple[Dict, Dict[str, int]]:
     """
     Create PARSeq-compatible dataset tree:
@@ -437,6 +490,13 @@ def create_parseq_dataset(
         filter_by_legibility=filter_by_legibility,
     )
     train_samples, val_samples = split_samples_by_tracklet(samples, val_fraction=val_fraction, seed=seed)
+    train_samples = rebalance_train_samples(
+        train_samples,
+        mode=class_balance_mode,
+        max_multiplier=balance_max_multiplier,
+        target_count=balance_target_count,
+        seed=seed,
+    )
 
     train_lmdb_dir = dataset_root / 'train' / 'custom'
     val_lmdb_dir = dataset_root / 'val' / 'custom'
@@ -571,6 +631,12 @@ def main():
                        help="Path to pretrained PARSeq checkpoint to fine-tune from")
     parser.add_argument("--max-label-length", type=int, default=2,
                        help="Maximum target label length (default: 2 for jersey numbers)")
+    parser.add_argument("--class-balance", choices=["none", "oversample"], default="none",
+                       help="Class balancing strategy for training set (default: none)")
+    parser.add_argument("--balance-max-multiplier", type=float, default=3.0,
+                       help="Maximum oversampling multiplier for any single sample (default: 3.0)")
+    parser.add_argument("--balance-target-count", type=int, default=0,
+                       help="Target per-class count for oversampling (0 means auto=max class count)")
     
     args = parser.parse_args()
     
@@ -590,6 +656,7 @@ def main():
     logger.info(f"Output directory: {args.output_dir}")
     logger.info(f"Filter by legibility: {args.filter_by_legibility}")
     logger.info(f"Legibility precomputed file: {args.legibility_precomputed}")
+    logger.info(f"Class balance mode: {args.class_balance}")
 
     dataset_root = args.output_dir / "parseq_data"
 
@@ -607,6 +674,13 @@ def main():
 
         logger.info("\n[Step 2] Building train/val split from pre-scored samples...")
         train_samples, val_samples = split_samples_by_tracklet(samples, val_fraction=args.val_fraction, seed=args.seed)
+        train_samples = rebalance_train_samples(
+            train_samples,
+            mode=args.class_balance,
+            max_multiplier=args.balance_max_multiplier,
+            target_count=args.balance_target_count,
+            seed=args.seed,
+        )
 
         logger.info("\n[Step 3] Writing PARSeq LMDB dataset...")
         train_lmdb_dir = dataset_root / 'train' / 'custom'
@@ -645,6 +719,9 @@ def main():
             val_fraction=args.val_fraction,
             seed=args.seed,
             filter_by_legibility=args.filter_by_legibility,
+            class_balance_mode=args.class_balance,
+            balance_max_multiplier=args.balance_max_multiplier,
+            balance_target_count=args.balance_target_count,
         )
         logger.info(
             "Legibility summary: total=%d kept=%d flagged_illegible=%d filtered=%d",
